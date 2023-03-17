@@ -1,0 +1,120 @@
+/*länk knappar */
+.bt {
+  list-style: none;
+  font-size: medium;
+  background: #27ae60;
+  color: black;
+  border-radius: 0px;
+  border: solid black;
+  text-decoration: none;
+}
+/* generella knappar */
+.btn {
+  background: #27ae60;
+  display: inline-block;
+  padding: 0em 0em;
+  color: black;
+  border-radius: 0px;
+  border: solid black;
+  font-size: medium;
+  text-decoration: none;
+}
+
+/*  svart text färg på knappar */
+.black {
+  color: black;
+  display: block;
+  text-decoration: none;
+}
+.black:hover {
+  color: white;
+}
+/* W3C knapp*/
+.btw {
+  font-size: x-large;
+  background: #27ae60;
+  color: black;
+  width: 100%;
+  border-radius: 0px;
+  border: solid black;
+  display: block;
+
+  text-decoration: none;
+
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+/* W3C sidans lista*/
+ol li {
+  padding-left: 0;
+  text-align: left;
+  padding: 10px 10px;
+}
+/* Upplyser texten där musen är på hela sidan*/
+p:hover,
+h1:hover,
+h2:hover,
+ol li:hover {
+  background-color: yellow;
+}
+/* styling för text w3c riktlinker */
+.container {
+  width: 270px;
+  background: #27ae60;
+  padding: 10px;
+  margin: 0 auto;
+  box-sizing: 0 0 5px black;
+}
+/* visa-mer-text slide-down funktion*/
+#check {
+  display: none;
+}
+/* visa-mer-text slide-down funktion*/
+.content {
+  display: none;
+  transition: 0, 5s linear;
+  -webkit-transition: 0, 5s linear;
+  -moz-transition: 0, 5s linear;
+  -ms-transition: 0, 5s linear;
+  -o-transition: 0, 5s linear;
+}
+/* visa-mer-text slide-down funktion*/
+label {
+  display: inline-block;
+  color: black;
+  text-decoration: underline;
+  font-weight: 600;
+}
+#check:checked ~ .content {
+  display: block;
+}
+#check:checked ~ label {
+  visibility: hidden;
+}
+#check:checked ~ label:after {
+  content: "Visa mindre";
+  visibility: visible;
+  display: block;
+}
+@media screen and (max-width: 900px) {
+  .container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 900px) {
+  #indexbild {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  #indexbild {
+    width: 30%;
+  }
+}

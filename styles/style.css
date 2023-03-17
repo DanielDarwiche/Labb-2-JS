@@ -1,0 +1,126 @@
+/* vald, active länk i nav */
+main {
+  display: inline-block;
+  padding-bottom: 10%;
+}
+/* generella inställningar*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+/* generella inställningar*/
+body {
+  background-color: beige;
+  padding: 0%;
+  text-align: center;
+}
+footer {
+  padding: 0 0 10px;
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #27ae60;
+  position: fixed;
+  bottom: 0;
+  left: 0px;
+}
+/* meny/navigation = nav */
+nav {
+  display: flex;
+  background-color: #27ae60;
+}
+nav ul li {
+  line-height: 50px;
+  list-style: none;
+  float: left;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  padding: 0 5px;
+  text-align: center;
+}
+/* hover över länkar */
+nav ul li a:hover {
+  color: white;
+}
+nav ul li a.act {
+  background-color: lightgreen;
+}
+h1 {
+  padding: 10px 0 10px;
+}
+h2 {
+  padding: 5px 0 10px;
+}
+.columnA,
+.columnB,
+.columnC {
+  float: left;
+  width: 31%;
+  padding: 10px;
+  text-align: justify;
+}
+@media screen and (max-width: 600px) {
+  .columnA,
+  .columnB,
+  .columnC {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .columnA,
+  .columnB,
+  .columnC {
+    width: 100%;
+  }
+}
+/* columner som är indelade i två stycken istället för tre*/
+.column1,
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  text-align: justify;
+}
+@media screen and (max-width: 600px) {
+  .column1,
+  .column2 {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .column1,
+  .column2 {
+    width: 100%;
+  }
+}
+/* quotes*/
+q {
+  font-family: "Tilt Neon", cursive;
+}
+/* bild med 300px storlek*/
+.pic300 {
+  width: 300px;
+}
+/* bilder som ska vara centrerade */
+.centerbild {
+  width: 100%;
+}
+/* bild med specialkrav */
+.paddingbild {
+  width: 90%;
+  padding: 50px 0 15px;
+}
+/* Lista på portfolio */
+.putinleft {
+  list-style: square;
+}
+.putinleft li {
+  padding-left: 0;
+  text-align: left;
+  padding: 5px 0px;
+}
