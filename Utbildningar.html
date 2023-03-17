@@ -25,40 +25,31 @@
     </header>
 
     <main>
-      <h1>CV: Utbildningar</h1>
+      <h1>Cv: tidigare utbildningar</h1>
+      <ul class="ol"></ul>
       <img
         src="https://campus.varberg.se/images/om-campus-varberg/campus-varberg/Exterior_Campus_620x320_2x.jpg"
         alt="Fotografi av en av Campus byggnader"
         title="Fotografi av en av Campus byggnader"
         class="centerbild"
       />
-      <section class="column1">
-        <h2>Peder Skrivares Skola: Estetiska programmet</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci incidunt,
-          doloremque consequuntur perspiciatis eligendi culpa, assumenda suscipit officia
-          illum perferendis voluptatibus cumque consectetur repudiandae fuga odio nostrum
-          sed fugit repellendus est voluptate quis accusantium ratione. Soluta itaque,
-          placeat fugit in dicta rem laborum reprehenderit nisi. Similique quae
-          dignissimos explicabo minima. Earum ratione voluptatibus velit iusto dolore
-          exercitationem eum sint culpa.
-        </p>
-      </section>
-      <section class="column2">
-        <h2>Campus: System<wbr />utvecklare .NET</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci incidunt,
-          doloremque consequuntur perspiciatis eligendi culpa, assumenda suscipit officia
-          illum perferendis voluptatibus cumque consectetur repudiandae fuga odio nostrum
-          sed fugit repellendus est voluptate quis accusantium ratione. Soluta itaque,
-          placeat fugit in dicta rem laborum reprehenderit nisi. Similique quae
-          dignissimos explicabo minima. Earum ratione voluptatibus velit iusto dolore
-          exercitationem eum sint culpa.
-        </p>
-      </section>
     </main>
     <footer>
       <p class="footer">© 2023 Daniel Darwiche</p>
     </footer>
+    <script>
+      let list = "";
+      fetch("cv.json")
+        .then((response) => response.json())
+        .then((json) => {
+          console.log(json); // Check if JSON data is properly parsed
+          json.utbildningar.forEach((utb) => {
+            list += `<li> <strong>Skola: ${utb.Skola} </strong></li>`;
+            list += `<p>Program: ${utb.Program}</p>`;
+          });
+          document.querySelector(".ol").innerHTML = list;
+        })
+        .catch((error) => console.log(error)); // Log any errors in the fetch request
+    </script>
   </body>
 </html>

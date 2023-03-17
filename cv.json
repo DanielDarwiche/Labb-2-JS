@@ -1,0 +1,11 @@
+{
+  "arbetsplatser": [
+    { "Företag": "Nuvia", "Yrke": "Strålskyddstekniker", "Stad": "Varberg" },
+    { "Företag": "ISS", "Yrke": "Strålskyddstekniker", "Stad": "Forsmark" },
+    { "Företag": "Circle K", "Yrke": "Personal", "Stad": "Varberg" }
+  ],
+  "utbildningar": [
+    { "Skola": "Peder Skrivares skola", "Program": "Estetiska programmet" },
+    { "Skola": "Campus", "Program": "Systemutvecklare .NET" }
+  ]
+}
