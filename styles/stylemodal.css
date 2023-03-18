@@ -68,6 +68,10 @@ button:hover {
   left: 50%;
   margin: -3px 0 0 -1px;
   top: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
 }
 
 .modal__close:before {
