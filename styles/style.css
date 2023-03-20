@@ -56,34 +56,12 @@ h1 {
 h2 {
   padding: 5px 0 10px;
 }
-.columnA,
-.columnB,
-.columnC {
-  float: left;
-  width: 31%;
-  padding: 10px;
-  text-align: justify;
-}
-@media screen and (max-width: 600px) {
-  .columnA,
-  .columnB,
-  .columnC {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 400px) {
-  .columnA,
-  .columnB,
-  .columnC {
-    width: 100%;
-  }
-}
-/* columner som är indelade i två stycken istället för tre*/
+
+/* columner som är indelade i två stycken */
 .column1,
 .column2 {
   float: left;
   width: 50%;
-  padding: 10px;
   text-align: justify;
 }
 @media screen and (max-width: 600px) {
@@ -106,21 +84,36 @@ q {
 .pic300 {
   width: 300px;
 }
-/* bilder som ska vara centrerade */
-.centerbild {
-  width: 100%;
+/*länk knappar */
+.bt {
+  list-style: none;
+  font-size: medium;
+  background: #27ae60;
+  border-radius: 0px;
+  border: solid black;
+  text-decoration: none;
 }
-/* bild med specialkrav */
-.paddingbild {
-  width: 90%;
-  padding: 50px 0 15px;
+a:visited {
+  color: black;
 }
-/* Lista på portfolio */
-.putinleft {
-  list-style: square;
+
+/* Upplyser texten där musen är på hela sidan*/
+.bt:hover,
+p:hover,
+h1:hover,
+h2:hover {
+  background-color: yellow;
 }
-.putinleft li {
-  padding-left: 0;
-  text-align: left;
-  padding: 5px 0px;
+.bt:hover {
+  background-color: white;
+}
+@media screen and (max-width: 900px) {
+  .pic300 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .pic300 {
+    width: 30%;
+  }
 }

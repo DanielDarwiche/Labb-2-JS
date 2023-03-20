@@ -5,9 +5,6 @@
     <meta name="description" content="CV" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="styles/style.css" rel="stylesheet" media="screen" />
-    <link href="styles/styletwo.css" rel="stylesheet" media="screen" />
-    <link href="styles/stylemodal.css" rel="stylesheet" media="screen" />
-    <link rel="styles/stylesheet" media="print" href="print.css" />
     <link rel="shortcut icon" type="image/png" href="img/smile.png" />
     <title>CV - Arbetsplatser</title>
   </head>
@@ -19,19 +16,12 @@
           <li><a href="Arbetsplatser.html" class="act">Arbetsplatser</a></li>
           <li><a href="Utbildningar.html">Utbildningar</a></li>
           <li><a href="Portfolio.html">Portfolio</a></li>
-          <li><a href="Filosofi.html">Filosofi</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h1>Cv: tidigare arbetsplatser</h1>
+      <h1><u>Cv: tidigare arbetsplatser</u></h1>
       <ul class="ol"></ul>
-      <img
-        src="img/atom.png"
-        alt="Illustration av fusionprocess och energiutvinnande"
-        title="Illustration av fusionprocess och energiutvinnande"
-        class="paddingbild"
-      />
     </main>
     <footer>
       <p class="footer">© 2023 Daniel Darwiche</p>
@@ -43,9 +33,9 @@
         .then((json) => {
           console.log(json); // Check if JSON data is properly parsed
           json.arbetsplatser.forEach((plats) => {
-            list += `<li><strong>Företag: ${plats.Företag}</strong></li>`;
+            list += `<p><strong>Företag: ${plats.Företag}</strong></p>`;
             list += `<p>Yrke: ${plats.Yrke}</p>`;
-            list += `<p>Stad: ${plats.Stad}</p>`;
+            list += `<p>Stad: ${plats.Stad}</p><br><hr><br>`;
           });
           document.querySelector(".ol").innerHTML = list;
         })

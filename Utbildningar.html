@@ -5,9 +5,6 @@
     <meta name="description" content="CV" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="styles/style.css" rel="stylesheet" media="screen" />
-    <link href="styles/styletwo.css" rel="stylesheet" media="screen" />
-    <link href="styles/stylemodal.css" rel="stylesheet" media="screen" />
-    <link rel="styles/stylesheet" media="print" href="print.css" />
     <link rel="shortcut icon" type="image/png" href="img/smile.png" />
     <title>CV - Utbildningar</title>
   </head>
@@ -19,20 +16,13 @@
           <li><a href="Arbetsplatser.html">Arbetsplatser</a></li>
           <li><a href="Utbildningar.html" class="act">Utbildningar</a></li>
           <li><a href="Portfolio.html">Portfolio</a></li>
-          <li><a href="Filosofi.html">Filosofi</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1>Cv: tidigare utbildningar</h1>
+      <h1><u>Cv: tidigare utbildningar</u></h1>
       <ul class="ol"></ul>
-      <img
-        src="https://campus.varberg.se/images/om-campus-varberg/campus-varberg/Exterior_Campus_620x320_2x.jpg"
-        alt="Fotografi av en av Campus byggnader"
-        title="Fotografi av en av Campus byggnader"
-        class="centerbild"
-      />
     </main>
     <footer>
       <p class="footer">© 2023 Daniel Darwiche</p>
@@ -44,8 +34,8 @@
         .then((json) => {
           console.log(json); // Check if JSON data is properly parsed
           json.utbildningar.forEach((utb) => {
-            list += `<li> <strong>Skola: ${utb.Skola} </strong></li>`;
-            list += `<p>Program: ${utb.Program}</p>`;
+            list += `<p> <strong>Skola: ${utb.Skola} </strong></p>`;
+            list += `<p>Program: ${utb.Program}</p><br><hr><br>`;
           });
           document.querySelector(".ol").innerHTML = list;
         })

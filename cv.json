@@ -7,5 +7,28 @@
   "utbildningar": [
     { "Skola": "Peder Skrivares skola", "Program": "Estetiska programmet" },
     { "Skola": "Campus", "Program": "Systemutvecklare .NET" }
+  ],
+  "rubriker": [
+    { "rubrik": "Hem", "innehåll": "Introducerande innehåll" },
+    { "rubrik": "Cv", "innehåll": "Tidigare arbetsplatser" },
+    { "rubrik": "Cv", "innehåll": "Tidigare och nuvarande utbildningar" },
+    { "rubrik": "Portfolio", "innehåll": "Tidigare och nuvarande projekt" }
+  ],
+  "projekt": [
+    {
+      "titel": "HangMan",
+      "knapp": "<button class='bt'><a href='https://github.com/DanielDarwiche/HangMan'   target='_blank'>Länk</a> </button>",
+      "beskrivning": "Hänga gubbe är ett spel som är skapat med hjälp av C# och Visual Studio. Spelet är namngivet HangMan och är väldigt svårt. <i>Knappen ovan leder till en relevant sida för projektet.</i>"
+    },
+    {
+      "titel": "Sött och Elegant",
+      "knapp": "<button class='bt'><a href='https://danielsskolhemsida.wordpress.com/'  target='_blank'>Länk</a> </button>",
+      "beskrivning": "Detta är en websida designad med hjälp av wordpress. Det är en skolprojekt för att utforma en websida med hjälp av wordpress, som är väldigt lätt att använda, istället för att skapa allt själv. <i>Knappen ovan leder till en relevant sida för projektet.</i>"
+    },
+    {
+      "titel": "Sten-Sax-Påse",
+      "knapp": "<button class='bt'><a href='https://github.com/DanielDarwiche/RoPaSci'   target='_blank'>Länk</a> </button>",
+      "beskrivning": "Sten-Sax-Påse är ett spel som är skapat med hjälp av C# och Visual Studio. Det finns inga illustrationer i spelet men man kan tävla mot datorn. Efter varje omgång visas antal vinster,förluster,oavgjorda samt antal spelade omgångar. Spelet är namngivet RoPaSci, som en förkortning av Rock-Paper-Scissor. <i>Knappen ovan leder till en relevant sida för projektet.</i>"
+    }
   ]
 }
