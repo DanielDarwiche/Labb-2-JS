@@ -62,18 +62,25 @@ h2 {
 .column2 {
   float: left;
   width: 50%;
-  text-align: justify;
+  text-align: center;
+  padding: 20px 60px 0px;
 }
 @media screen and (max-width: 600px) {
   .column1,
   .column2 {
     width: 50%;
   }
+  .ol {
+    width: auto;
+  }
 }
 @media screen and (max-width: 400px) {
   .column1,
   .column2 {
     width: 100%;
+  }
+  .ol {
+    width: 300px;
   }
 }
 /* quotes*/
