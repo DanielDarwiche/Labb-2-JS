@@ -12,6 +12,7 @@ main {
 body {
   padding: 0%;
   text-align: center;
+  background-color: white;
   background: url(https://img.freepik.com/premium-vector/abstract-grey-turquoise-liquid-watercolor-background-with-golden-glitter_353323-491.jpg?w=1800);
 }
 footer {

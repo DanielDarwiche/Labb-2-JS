@@ -6,6 +6,8 @@ const ljusbak = document.getElementsByClassName("ljusbak");
 const mörkbak = document.getElementsByClassName("mörkbak");
 const aktivbak = document.getElementsByClassName("act");
 
+const body = document.getElementsByTagName("body")[0];
+
 egg.addEventListener("click", changeColor);
 function changeColor() {
   alert(`Att klicka lite överallt är viktigt ibland!`);
@@ -16,6 +18,9 @@ function changeColor() {
   for (let i = 0; i < mörkbak.length; i++) {
     mörkbak[i].style.backgroundColor = "#006eff";
   }
+
+  body.style.backgroundImage =
+    "url(https://img.freepik.com/free-vector/elegant-alcohol-ink-background-with-gold-glitter-elements_1048-15537.jpg?w=1800&t=st=1679400305~exp=1679400905~hmac=b9c155be61901464b8d9fc5ba04f3e0bd7e74a072dc2bd94fef3cfeabe358f60)";
 }
 
 let inputString = "";
