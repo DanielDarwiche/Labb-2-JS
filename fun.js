@@ -18,18 +18,19 @@ function changeColor() {
   for (let i = 0; i < mörkbak.length; i++) {
     mörkbak[i].style.backgroundColor = "#006eff";
   }
-
   body.style.backgroundImage =
     "url(https://img.freepik.com/free-vector/elegant-alcohol-ink-background-with-gold-glitter-elements_1048-15537.jpg?w=1800&t=st=1679400305~exp=1679400905~hmac=b9c155be61901464b8d9fc5ba04f3e0bd7e74a072dc2bd94fef3cfeabe358f60)";
 }
 
 let inputString = "";
-window.addEventListener("keydown", secret);
+
+//nedan secret function ett är ett alternativ för
+//modalpopup easter egg men funkar inte med secretTwo
+/*window.addEventListener("keydown", secret);
 function secret(event) {
   const userInput = event.key.toLowerCase(); // Convert input to lowercase
   inputString += userInput; // Add current key press to input string
   inputString = inputString.slice(-4); // Keep only the last 4 characters
-
   if (inputString === "hola") {
     // Check if input matches 'hola'
     alert("Hola Compañero! Escuchamos a La Cucaracha!"); // Display an alert message
@@ -37,7 +38,21 @@ function secret(event) {
     laCuca.innerHTML = `<h1><strong>Koden var: Hola</strong><br>Belöningen är att få lyssna på La Cucaracha.</h1><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1245734737&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-519589799-23871065" title="Schlange" target="_blank" style="color: #cccccc; text-decoration: none;">Schlange</a> · <a href="https://soundcloud.com/user-519589799-23871065/mp3fy-la-cucaracha" title="La Cucaracha" target="_blank" style="color: #cccccc; text-decoration: none;">La Cucaracha</a></div>`;
     laCuca.style.display = "block";
     inputString = ""; // Reset input string
-    const hemlig = document.getElementById("hemlig");
-    hemlig.style.visibility = "visible";
+  }
+}
+*/
+window.addEventListener("keydown", secretTwo);
+
+function secretTwo(event) {
+  const userInput = event.key.toLowerCase(); // Convert input to lowercase
+  inputString += userInput; // Add current key press to input string
+  inputString = inputString.slice(-4); // Keep only the last 4 characters
+  if (inputString === "hej") {
+    // Check if input matches 'tjena'
+    alert("Tjena! Kolla ner!"); // Display an alert message
+    const modal = document.getElementById("modal");
+    modal.innerHTML = `<h1><strong>Koden var: Tjena</strong><br>Belöningen är att få lyssna på Habibi Dah.</h1><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1285725025&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-713568172" title="Zach Jawhar" target="_blank" style="color: #cccccc; text-decoration: none;">Zach Jawhar</a> · <a href="https://soundcloud.com/user-713568172/hisham-abbas-habibi-dah" title="Hisham Abbas - Habibi Dah" target="_blank" style="color: #cccccc; text-decoration: none;">Hisham Abbas - Habibi Dah</a></div><br>`;
+    modal.style.display = "block";
+    inputString = ""; // Reset input string
   }
 }

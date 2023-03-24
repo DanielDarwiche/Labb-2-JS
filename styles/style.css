@@ -1,3 +1,10 @@
+.modal {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 60px 60px blue;
+  padding: 20px 20px 20px 20px;
+}
+
 /* vald, active länk i nav */
 main {
   display: inline-block;
